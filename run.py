@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from myapp import create_app
+from index import app
 
-app = create_app()
+app = app

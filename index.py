@@ -49,7 +49,7 @@ def palabras(archivo):
         
         num=0
         numero_lim = random.randint(1, 105000)
-        archivo = open(archivo, 'r')
+        archivo = open('archivo.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
@@ -66,7 +66,7 @@ def preguntas(archivo):
         
         num=0
         numero_lim = random.randint(1, 50)
-        archivo = open(archivo, 'r')
+        archivo = open('archivo.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
