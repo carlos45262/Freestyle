@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Batalla Contra Chuty</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<style>
+    #temporizador {
+        width: 200px;  /* Ajusta el ancho según tus necesidades */
+        height: 30px;  /* Ajusta la altura según tus necesidades */
+    }
+</style>
+<body>
+    <div class="chuty">
+        <div class="containertitulo">
+            <h1> Tu vs Chuty </h1>
+        </div>
+        
+        <audio id="audio1" src="{{ url_for('serve_audio', filename=audio1 ) }}"></audio>
+        <audio id="audio2" src="{{ url_for('serve_audio', filename=audio2) }}"></audio>
+        <audio id="audio3" src="{{ url_for('serve_audio', filename=audio3) }}"></audio>
+        <audio id="audio4" src="{{ url_for('serve_audio', filename=audio4) }}"></audio>
+        <audio id="audio5" src="{{ url_for('serve_audio', filename=audio5) }}"></audio>
+        
+      
+        
+        <button id="playButton" onclick="playMusic();playAudio();startTimer();reproducirVideo();this.style.display = 'none'">EMPEZAR</button>
+        <button id="reinicio" style="display: none;" onclick="location.reload()">REINICIAR</button>
+        
+        <audio id="audioPlayer" src="{{ url_for('serve_audio', filename='tiktok.mp3') }}"></audio>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}?v={{ random }}"></script>
+        
+       <div class="youtube">  
+                <iframe width="400" height="150" src="https://www.youtube.com/embed/ONj6SZUhwkU" title="Nerso &amp; Verse - Tik Tok (Chuty VS Bnet) Instrumental temática FMS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    
+        <div class="central" id="temporizador"></div>
+      <!-- Otras etiquetas y contenido de tu página -->
+      </div>
+</body>
+</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

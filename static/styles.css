@@ -1,0 +1,242 @@
+
+body{
+  /*background-image: url('{{ url_for('static', filename=/static/img2017/chuty.jpg) }}');*/
+  background-image: url('/static/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chuty{
+  /*background-image: url('{{ url_for('static', filename=/static/img2017/chuty.jpg) }}');*/
+  background-image: url('/static/chutyb.jpg');
+  background-size: cover;
+  position:center;
+  background-repeat: no-repeat;
+}
+
+
+a{
+    text-decoration: none;      
+}
+
+.primerafila{
+    margin-bottom:30px;
+}
+
+.segundafila{
+    margin-bottom:30px;
+}
+
+.tercerafila{
+    margin-bottom:30px;
+}
+.cuartafila{
+    margin-bottom:30px;
+}
+.myButton {
+    
+    text-decoration: none;  
+    margin-bottom:10px;
+    background-color: black;
+    width:200px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.central{
+    
+    font-size: 200px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width:300px;
+    color: white;
+}
+
+.myButton:hover {
+    background-color: darkblue;
+}
+
+.containertitulo {
+    font-style: italic;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.menucontainer {
+    
+    background-color: transparent;
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width:500px;
+}
+
+.historias{
+    border-radius: 0;
+    background-color: gray;
+    width:500px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+
+.image {
+    position: absolute;
+    width: 200px;
+  }
+  
+  .image1 {
+    top: 70px;
+    left: 70px;
+  }
+  
+  .image2 {
+    top: 70px;
+    right: 70px;
+  }
+  
+  .image3 {
+    bottom: 70px;
+    left: 70px;
+  }
+  
+  .image4 {
+    bottom: 70px;
+    right: 70px;
+  }
+  
+.image-row {
+        display: flex; /* Utilizamos flexbox para alinear las imágenes en una fila */
+        display: inline-block;
+        position:relative;
+        }
+        
+.image-row img {
+            position: absolute; 
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 300px; /* Establece el ancho deseado para las imágenes */
+            height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 200px; /* Espacio entre las imágenes */
+        }
+.image-row .botonup {
+            position:absolute;
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 20px; /* Establece el ancho deseado para las imágenes */
+            /*height: auto; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 300px;
+            margin-top: 400px; /* Espacio entre las imágenes */
+            z-index: 1;
+        }
+        
+.image-row--1 {
+        display: flex; /* Utilizamos flexbox para alinear las imágenes en una fila */
+        display: inline-block;
+        position:relative;
+        }
+        
+.image-row--1 img {
+            position: absolute; 
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 300px; /* Establece el ancho deseado para las imágenes */
+            height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 500px; /* Espacio entre las imágenes */
+        }
+.image-row--1 .botonup {
+            position:absolute;
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 20px; /* Establece el ancho deseado para las imágenes */
+            /*height: auto; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 600px;
+            margin-top: 400px; /* Espacio entre las imágenes */
+            z-index: 1;
+        }
+        
+.image-row--2 {
+        display: flex; /* Utilizamos flexbox para alinear las imágenes en una fila */
+        display: inline-block;
+        position:relative;
+        }
+        
+.image-row--2 img {
+            position: absolute; 
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 300px; /* Establece el ancho deseado para las imágenes */
+            height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 800px; /* Espacio entre las imágenes */
+        }
+.image-row--2 .botonup {
+            position:absolute;
+             /* Establece posicionamiento relativo para el contenedor */
+            display: inline-block; /* Mantiene los elementos en línea */
+            width: 20px; /* Establece el ancho deseado para las imágenes */
+            /*height: auto; /* Ajusta la altura automáticamente según la proporción de la imagen */
+            margin-left: 900px;
+            margin-top: 400px; /* Espacio entre las imágenes */
+            z-index: 1;
+        }
+        
+        
+.youtube{
+
+  position: fixed;
+  bottom: 0;
+  left: 400px;
+
+}
+
+.hidden{
+     display: none;
+}
+
+        
+
+        
+   
+
+
+  
+
+
+
+
+
+
