@@ -13,7 +13,7 @@ def imagenes():
     global imagen
 
     # Ruta a la carpeta que contiene las imágenes
-    carpeta_imagenes ="static\\img2017"
+    carpeta_imagenes= os.path.abspath("static/img2017")
     
     # Obtener la lista de archivos en la carpeta
     archivos = os.listdir(carpeta_imagenes)
