@@ -13,7 +13,7 @@ def imagenes():
     global imagen
 
     # Ruta a la carpeta que contiene las imágenes
-    carpeta_imagenes ="static\img2017"
+    carpeta_imagenes ="static\\img2017"
     
     # Obtener la lista de archivos en la carpeta
     archivos = os.listdir(carpeta_imagenes)
@@ -66,7 +66,7 @@ def preguntas(archivo):
         
         num=0
         numero_lim = random.randint(1, 50)
-        archivo = open('preguntas.txt', 'r', encoding='utf-8', errors='ignore')
+        archivo = open('kickback.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
