@@ -49,7 +49,7 @@ def palabras(archivo):
         
         num=0
         numero_lim = random.randint(1, 105000)
-        archivo = open('palabras.txt', 'r', encoding='utf-8')
+        archivo = open('palabras.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
@@ -66,7 +66,7 @@ def preguntas(archivo):
         
         num=0
         numero_lim = random.randint(1, 50)
-        archivo = open('kickback.txt', 'r', encoding='utf-8')
+        archivo = open('kickback.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
@@ -117,6 +117,13 @@ def principal():
 def contacto():
     
     return render_template('contacto.html')
+
+
+@app.route('/about')
+def about():
+    
+    return render_template('about.html')
+
 
 
 @app.route('/politicas')
