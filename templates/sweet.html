@@ -1,45 +1,55 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Incremental</title>
+    <title>Batalla Contra SweetPain</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5718487156861573"
      crossorigin="anonymous"></script>
 </head>
+
+
 <body>
-    <div class="containertitulo">
-        <h1>Incremental mode</h1>
-    </div>
-     <div class="central" id="temporizador"></div>
-      <!-- Otras etiquetas y contenido de tu página -->
-     </div>
-     
-    <button id="botonincremental" onclick="incremental()">Iniciar</button>
     
-    <div class="historias">
-        <h1 id="word">{{word}}</span>
-        <h1 id="word1" class="hidden">{{word1}}<h1>
-        <span id="word2" class="hidden">{{word2}}</span>
-        <span id="word3" class="hidden">{{word3}}</span>
-        <span id="word4" class="hidden">{{word4}}</span>
-        <span id="word5" class="hidden">{{word5}}</span>
-        <span id="word6" class="hidden">{{word6}}</span>
-        <span id="word7" class="hidden">{{word7}}</span>
-        <span id="word8" class="hidden">{{word8}}</span>
-        
+   <div class="fondo">
+    <div class="containertitulo">
+        <h1> Tu vs SweetPain </h1>
     </div>
-<div class="youtube">  
-    <iframe width="400" height="150" src="https://www.youtube.com/embed/ONj6SZUhwkU" title="Nerso &amp; Verse - Tik Tok (Chuty VS Bnet) Instrumental temática FMS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+    
+    
+    <audio id="audio1" src="{{ url_for('serve_audio2', filename=audio1 ) }}"></audio>
+    <audio id="audio2" src="{{ url_for('serve_audio2', filename=audio2) }}"></audio>
+    <audio id="audio3" src="{{ url_for('serve_audio2', filename=audio3) }}"></audio>
+    <audio id="audio4" src="{{ url_for('serve_audio2', filename=audio4) }}"></audio>
+    <audio id="audio5" src="{{ url_for('serve_audio2', filename=audio5) }}"></audio>
+    
+  
+    
+    <button id="playButton" onclick="playMusic()">EMPEZAR</button>
+    
+    
+    <audio controls>
+    <source src="{{ url_for('serve_audio', filename='tiktok.mp3') }}" type="audio/mpeg">
+    Tu navegador no admite la reproducción de audio.
+    </audio>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    
+    <div class="central" id="temporizador"></div>
+  <!-- Otras etiquetas y contenido de tu página -->
+  </div>
 <div class="footer">
-    <a href="politicas">Políticas de privacidad</a>
+     <a href="politicas">Políticas de privacidad</a>
     <a href="cookies">Políticas de cookies</a>
     <a href="contacto">Contacto</a>
 
  </div>
+</body>
+</html>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
@@ -47,4 +57,3 @@
 
 </body>
 </html>
-

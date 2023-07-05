@@ -4,6 +4,7 @@ from flask import Flask, render_template,send_from_directory
 import random
 from PIL import Image
 import os
+from flask_caching import Cache
 
     
 def imagenes():
@@ -13,7 +14,7 @@ def imagenes():
     global imagen
 
     # Ruta a la carpeta que contiene las imágenes
-    carpeta_imagenes= os.path.abspath("static/img2017")
+    carpeta_imagenes= "static/img2017"
     
     # Obtener la lista de archivos en la carpeta
     archivos = os.listdir(carpeta_imagenes)
@@ -94,10 +95,6 @@ def term():
         text= terminacion[aleatorio]
         
         return text
-                
-            
-            
-
 
 app=Flask(__name__)
 
@@ -117,6 +114,22 @@ def principal():
     
     return render_template('index.html')
 
+@app.route('/contacto')
+def contacto():
+    
+    return render_template('contacto.html')
+
+
+@app.route('/politicas')
+def politica():
+    
+    return render_template('politicas.html')
+
+@app.route('/cookies')
+def cookies():
+    
+    return render_template('cookies.html')
+
 @app.route('/historias')
 def historias():
     
@@ -134,9 +147,15 @@ def objetos():
 def serve_audio(filename):
     return send_from_directory('static/audios', filename)
 
-@app.route('/batalla/audio/<filename>')
+@app.route('/batalla/audio/mecha/<filename>')
 def serve_audio1(filename):
     return send_from_directory('static/audios/mecha', filename)
+
+
+@app.route('/batalla/audio/sweet/<filename>')
+def serve_audio2(filename):
+    return send_from_directory('static/audios/sweet', filename)
+
 
 @app.route('/terminaciones')
 def terminaciones():
@@ -170,10 +189,16 @@ def mecha():
         
      return render_template('mecha.html',audio1=audiosmecha[ran(audiosmecha)],audio2=audiosmecha[ran(audiosmecha)],audio3=audiosmecha[ran(audiosmecha)],audio4=audiosmecha[ran(audiosmecha)],audio5=audiosmecha[ran(audiosmecha)],audio6=audiosmecha[ran(audiosmecha)])
     
-@app.route('/batalla/sweetpain')
-def sweetpain():
+@app.route('/batalla/sweet')
+def sweet():
+    
+     audiossweet=['sweet1.mp3','sweet2.mp3','sweet3.mp3','sweet4.mp3',
+                  'sweet5.mp3','sweet6.mp3','sweet7.mp3','sweet8.mp3',
+                  'sweet9.mp3','sweet10.mp3','sweet11.mp3','sweet12.mp3',
+                  'sweet13.mp3','sweet14.mp3','sweet15.mp3','sweet16.mp3',
+                  'sweet17.mp3']
         
-    return render_template('sweetpain.html')
+     return render_template('sweet.html',audio1=audiossweet[ran(audiossweet)],audio2=audiossweet[ran(audiossweet)],audio3=audiossweet[ran(audiossweet)],audio4=audiossweet[ran(audiossweet)],audio5=audiossweet[ran(audiossweet)],audio6=audiossweet[ran(audiossweet)])
 
 @app.route('/incremental')
 def incremental():
