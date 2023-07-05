@@ -4,7 +4,6 @@ from flask import Flask, render_template,send_from_directory
 import random
 from PIL import Image
 import os
-from flask_caching import Cache
 
     
 def imagenes():
@@ -50,7 +49,7 @@ def palabras(archivo):
         
         num=0
         numero_lim = random.randint(1, 105000)
-        archivo = open('palabras.txt', 'r', encoding='utf-8', errors='ignore')
+        archivo = open('palabras.txt', 'r', encoding='utf-8')
         
         for linea in archivo:
             
@@ -67,7 +66,7 @@ def preguntas(archivo):
         
         num=0
         numero_lim = random.randint(1, 50)
-        archivo = open('kickback.txt', 'r', encoding='utf-8', errors='ignore')
+        archivo = open('kickback.txt', 'r', encoding='utf-8')
         
         for linea in archivo:
             
