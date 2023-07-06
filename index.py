@@ -43,7 +43,7 @@ def ran(lista):
     return aleatorio
     
     
-    
+
 
 def palabras(archivo):
         
@@ -112,6 +112,10 @@ def principal():
 def principal():
     
     return render_template('index.html')
+
+@app.route('/sitemap.xml')
+def sistemap():
+    return render_template('sitemap.xml')  
 
 @app.route('/contacto')
 def contacto():
