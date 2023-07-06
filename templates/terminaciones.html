@@ -13,11 +13,15 @@
     <div class="containertitulo">
        <h1>Rima todas las palabras posibles con esta terminacion</h1>
     </div>
-    <button id="botonterminacion" onclick="terminacion()">Iniciar</button>
     
-    <div class="historias">
-        <h1 id="terminacion">{{text}}</span>
-        <h1 id="t1" class="hidden">{{text1}}<h1>
+    <div class="centralterminacion" id="temporizador"></div>
+      <!-- Otras etiquetas y contenido de tu página -->
+     </div>
+     
+    
+    <div class="historias" id="terminaciones" > 
+        <h1 id="terminacion"  class="hidden">{{text}}</span>
+        <h1 id="t1"  class="hidden">{{text1}}<h1>
         <span id="t2" class="hidden">{{text2}}</span>
         <span id="t3" class="hidden">{{text3}}</span>
         <span id="t4" class="hidden">{{text4}}</span>
@@ -26,6 +30,9 @@
         <span id="t7" class="hidden">{{text7}}</span>
         <span id="t8" class="hidden">{{text8}}</span>
         
+    </div>
+    <div class="central">
+    <button id="botonterminacion" onclick="terminacion();startTimer();this.style.display = 'none';mostrar()">Iniciar</button>
     </div>
     
     <div class="youtube">  

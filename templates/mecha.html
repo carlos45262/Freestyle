@@ -24,15 +24,14 @@
     <audio id="audio5" src="{{ url_for('serve_audio1', filename=audio5) }}"></audio>
     
   
+    <div class="central">
+        <button id="playButton" onclick="playMusic();playAudio();startTimer();this.style.display = 'none'">EMPEZAR</button>
+        <button id="reinicio" style="display: none;" onclick="location.reload()">REINICIAR</button>
+    </div>
     
-    <button id="playButton" onclick="playMusic()">EMPEZAR</button>
-    
-    
-    <audio controls>
-    <source src="{{ url_for('serve_audio', filename='tiktok.mp3') }}" type="audio/mpeg">
-    Tu navegador no admite la reproducción de audio.
-    </audio>
-    
+    <audio id="audioPlayer" src="{{ url_for('serve_audio', filename='pista.mp3') }}"></audio>
+
+    <div class="central" id="temporizador"></div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>

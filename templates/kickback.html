@@ -13,14 +13,15 @@
     <div class="containertitulo">
         <h1>Kickback</h1>
     </div>
-     <div class="central" id="temporizador"></div>
+     <div class="centralkick" id="temporizador"></div>
       <!-- Otras etiquetas y contenido de tu página -->
      </div>
-     
-    <button id="botonkick" onclick="kickback()">Iniciar</button>
+    <div class="central">
+    <button id="botonkick" onclick="kickback();startTimer();this.style.display = 'none';mostrarkick()">Iniciar</button>
+    </div>
     
     <div class="historias">
-        <h1 id="pregunta">{{pregunta}}</span>
+        <h1 id="pregunta" class="hidden">{{pregunta}}</span>
         <h1 id="p1" class="hidden">{{p1}}<h1>
         <span id="p2" class="hidden">{{p2}}</span>
         <span id="p3" class="hidden">{{p3}}</span>

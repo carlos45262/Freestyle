@@ -82,11 +82,11 @@ def preguntas(archivo):
 def term():
         
         
-        terminacion=['aa','ab','ba', 'ac','ca','ad','da','ae','ea','af','fa','ga','ag','ha','ah','ia','ai','ja','aj','ak','ka','la','al','ma','am','na','an','oa','ao','ap','pa','ar','ra','as','sa','at','at','ua','au','va','av', 'wa','aw','ax','xa','az','za','ay','ya',
-                 'eb','be', 'ec','ce','ed','de','ee','ef','fe','ge','eg','he','eh','ie','ei','je','ej','ek','ke','le','el','me','em','ne','en','oe','eo','ep','pe','er','re','es','se','et','et','ue','eu','ve','ev', 'we','ew','ex','xe','ez','ze','ey','ye',
-                 'ib','bi', 'ic','ci','id','di','if','fi','gi','ig','hi','ih','ii','ji','ij','ik','ki','li','il','mi','im','ni','in','oi','io','ip','pi','ir','ri','is','si','it','ti','ui','iu','vi','iv', 'wi','iw','ix','xi','iz','zi','iy','yi',
-                 'ob','bo', 'oc','co','od','do','of','fo','go','og','ho','oh','jo','oj','ok','ko','lo','ol','mo','om','no','on','oo','op','po','or','ro','os','so','ot','to','uo','ou','vo','ov', 'wo','ow','ox','xo','oz','zo','oy','yo',
-                 'ub','bu', 'uc','cu','ud','du','uf','fu','gu','ug','hu','uh','ju','uj','uk','ku','lu','ul','mu','um','nu','un','up','pu','ur','ru','us','su','ut','tu','uu','vu','uv', 'wu','uw','ux','xu','uz','zu','uy','yu']
+        terminacion=['ba', 'ac','ca','ad','da','ae','ea','af','fa','ga','ha','ah','ia','ai','ja','aj','ak','ka','la','al','ma','am','na','an','oa','ao','ap','pa','ar','ra','as','sa','at','ua','au','va', 'wa','ax','az','za','ay','ya',
+                 'be','ce','ed','de','fe','ge','he','ie','ei','je','ke','le','el','me','em','ne','en','oe','eo','pe','er','re','es','se','et','ue','eu','ve', 'we','ex','ez','ze','ey','ye',
+                 'bi', 'ic','ci','id','di','fi','gi','ig','hi','ji','ki','li','il','mi','im','ni','in','oi','io','ip','pi','ir','ri','is','si','it','ti','ui','iu','vi', 'wi','ix','iz','yi',
+                 'bo','co','od','do','of','fo','go','jo','oj','ok','ko','lo','ol','mo','om','no','on','op','po','or','ro','os','so','to','uo','ou','vo','ov', 'wo','oz','zo','oy','yo',
+                'bu','cu','ud','du','uf','fu','gu','hu','ju','uj','ku','lu','ul','mu','um','nu','un','up','pu','ur','ru','us','su','ut','tu','vu', 'wu','uz','zu','uy','yu']
         
         aleatorio=random.randint(0,len(terminacion)-1)
 
@@ -139,7 +139,7 @@ def cookies():
 @app.route('/historias')
 def historias():
     
-    palabra=palabras('palabras.txt')
+    palabra=palabras('palabrascomunes.txt')
     
     return render_template('historias.html',word=palabra,word1=palabras('palabras.txt'),word2=palabras('palabras.txt'),word3=palabras('palabras.txt') )
 

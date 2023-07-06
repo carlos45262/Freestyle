@@ -153,8 +153,10 @@ a{
             width: 300px; /* Establece el ancho deseado para las imágenes */
             height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
             margin-left: 200px; /* Espacio entre las imágenes */
+            margin-top:200px;
         }
 .image-row .botonup {
+            color:white;
             position:absolute;
              /* Establece posicionamiento relativo para el contenedor */
             display: inline-block; /* Mantiene los elementos en línea */
@@ -169,6 +171,7 @@ a{
         display: flex; /* Utilizamos flexbox para alinear las imágenes en una fila */
         display: inline-block;
         position:relative;
+        
         }
         
 .image-row--1 img {
@@ -178,8 +181,11 @@ a{
             width: 300px; /* Establece el ancho deseado para las imágenes */
             height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
             margin-left: 500px; /* Espacio entre las imágenes */
+            margin-top:200px;
+
         }
 .image-row--1 .botonup {
+            color:white;
             position:absolute;
              /* Establece posicionamiento relativo para el contenedor */
             display: inline-block; /* Mantiene los elementos en línea */
@@ -203,8 +209,11 @@ a{
             width: 300px; /* Establece el ancho deseado para las imágenes */
             height: 450px; /* Ajusta la altura automáticamente según la proporción de la imagen */
             margin-left: 800px; /* Espacio entre las imágenes */
+            margin-top:200px;
+
         }
 .image-row--2 .botonup {
+            color:white;
             position:absolute;
              /* Establece posicionamiento relativo para el contenedor */
             display: inline-block; /* Mantiene los elementos en línea */
@@ -252,8 +261,43 @@ a{
 
 }
 
-        
+.botonup a{
 
+    color:white;
+    text-decoration: none;
+    
+
+}
+
+.colorboton{
+
+   color:white;
+   text-decoration: none;
+   }
+   
+.containerb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+
+ 
+.centralkick{
+    
+    font-size: 200px;
+    color: white;
+}
+
+
+.centralterminacion{
+    
+    font-size: 140px;
+    color: white;
+    margin-top:10%;
+}
+        
+   
         
    
 

@@ -13,14 +13,15 @@
     <div class="containertitulo">
         <h1>Incremental mode</h1>
     </div>
-     <div class="central" id="temporizador"></div>
+      <div class="centralkick" id="temporizador"></div>
       <!-- Otras etiquetas y contenido de tu página -->
      </div>
-     
-    <button id="botonincremental" onclick="incremental()">Iniciar</button>
+    <div class="central">
+    <button id="botonkick" onclick="incremental();startTimer();this.style.display = 'none';mostrarincremental()">Iniciar</button>
+    </div>
     
     <div class="historias">
-        <h1 id="word">{{word}}</span>
+        <h1 id="word" class="hidden">{{word}}</span>
         <h1 id="word1" class="hidden">{{word1}}<h1>
         <span id="word2" class="hidden">{{word2}}</span>
         <span id="word3" class="hidden">{{word3}}</span>

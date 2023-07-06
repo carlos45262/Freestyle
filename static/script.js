@@ -196,6 +196,26 @@ function terminacion() {
 }   
 
 
+function mostrar() {
+            var contenido = document.getElementById("terminacion");
+            contenido.style.display = "block";
+           
+        }
+        
+
+function mostrarkick() {
+            var contenido = document.getElementById("pregunta");
+            contenido.style.display = "block";
+           
+        }
+        
+function mostrarincremental() {
+            var contenido = document.getElementById("word");
+            contenido.style.display = "block";
+           
+        }
+
+
 
 
 
