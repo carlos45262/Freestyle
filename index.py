@@ -141,7 +141,7 @@ def historias():
     
     palabra=palabras('palabrascomunes.txt')
     
-    return render_template('historias.html',word=palabra,word1=palabras('palabras.txt'),word2=palabras('palabras.txt'),word3=palabras('palabras.txt') )
+    return render_template('historias.html',word=palabra,word1=palabras('palabrascomunes.txt'),word2=palabras('palabrascomunes.txt'),word3=palabras('palabrascomunes.txt') )
 
 @app.route('/objetos')
 def objetos():
@@ -211,7 +211,7 @@ def incremental():
     
     palabra=palabras('palabras.txt')
             
-    return render_template('incremental.html',word=palabra,word1=palabras('palabras.txt'),word2=palabras('palabras.txt'),word3=palabras('palabras.txt'),word4=palabras('palabras.txt'),word5=palabras('palabras.txt'),word6=palabras('palabras.txt'),word7=palabras('palabras.txt'),word8=palabras('palabras.txt'))
+    return render_template('incremental.html',word=palabra,word1=palabras('palabrascomunes.txt'),word2=palabras('palabrascomunes.txt'),word3=palabras('palabrascomunes.txt'),word4=palabras('palabrascomunes.txt'),word5=palabras('palabrascomunes.txt'),word6=palabras('palabrascomunes.txt'),word7=palabras('palabrascomunes.txt'),word8=palabras('palabrascomunes.txt'))
 
 @app.route('/kickback')
 def kickback():
