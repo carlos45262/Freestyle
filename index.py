@@ -48,7 +48,7 @@ def ran(lista):
 def palabras(archivo):
         
         num=0
-        numero_lim = random.randint(1, 105000)
+        numero_lim = random.randint(1, 55)
         archivo = open('palabrascomunes.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
