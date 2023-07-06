@@ -49,7 +49,7 @@ def palabras(archivo):
         
         num=0
         numero_lim = random.randint(1, 105000)
-        archivo = open('palabras.txt', 'r', encoding='utf-8', errors='ignore')
+        archivo = open('palabrascomunes.txt', 'r', encoding='utf-8', errors='ignore')
         
         for linea in archivo:
             
