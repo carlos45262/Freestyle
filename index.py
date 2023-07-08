@@ -170,7 +170,40 @@ def serve_audio2(filename):
 @app.route('/terminaciones')
 def terminaciones():
     
-    return render_template('terminaciones.html', text=term(),text1=term(),text2=term(),text3=term(),text4=term(),text5=term())
+    
+    yut=['https://www.youtube.com/embed/CGWei_Sz7p0',
+         'https://www.youtube.com/embed/ONj6SZUhwkU',
+         'https://www.youtube.com/embed/WIKxN_1ZSHk',
+         "https://www.youtube.com/embed/otEr1sV1UTU",
+         "https://www.youtube.com/embed/PXCs2GTvI-o",
+         "https://www.youtube.com/embed/NFmotCIUcVU",
+         "https://www.youtube.com/embed/qmHxEi4sJf8",
+         "https://www.youtube.com/embed/IPeG5qvCKyM",
+         "https://www.youtube.com/embed/S6fanqjFwPA",
+         "https://www.youtube.com/embed/JxzGk0FqQgI",
+         
+         
+         ]
+    
+    
+    titulos=['Freestyle Boom Bap Beat | &quot;EN EL NEGOCIO&quot; | Boom Bap Beat Uso Libre | Rap Instrumental |',
+             'Nerso &amp; Verse - Tik Tok (Chuty VS Bnet) Instrumental temática FMS',
+             'Nerso &amp; Verse - Chamartín Instrumental Réplica | BNET VS BLON | FMS España 2021',
+             'Nerso &amp; Verse - Leyendas Urbanas (Instrumental) | BNET vs ERRECÉ | FMS España 2020',
+             "ALCAZONE - LUNATICO | EXTENDIDO (Beat 1: SONY vs TINK 2016)",
+             "Nerso &amp; Verse - Cine (Instrumental) | GAZIR vs MNAK | FMS España 2020",
+             "[FREE] &quot;BENZ&quot; - Rap Freestyle Type Beat | Dark Underground Boom Bap Type Beat 2023",
+             "BASE DE TRAP &quot;FLOW PROPIO&quot; Trap/Rap Instrumental Beat Freestyle | Pista De Trap",
+             "Vshe: Withered | #FMS22 Beats",
+             "[FREE] Base de Freestyle Infinita 4x4 Estilo FMS - Freestyle Instrumental 2019"
+              ]
+    
+    
+    numerito=ran(yut)
+    
+    
+    
+    return render_template('terminaciones.html', text=term(),text1=term(),text2=term(),text3=term(),text4=term(),text5=term(), yutu=yut[numerito],titulo=titulos[numerito])
     
 @app.route('/batalla')
 def Batalla():
@@ -182,22 +215,33 @@ def Batalla():
 def chuty():
     
      audioschuty=['batallachuty1.mp3','batallachuty2.mp3','batallachuty3.mp3','batallachuty4.mp3',
-                  'batallachuty5.mp3','batallachuty6.mp3','batallachuty7.mp3','batallachuty8.mp3','batallachuty9.mp3'
+                  'batallachuty5.mp3','batallachuty6.mp3','batallachuty7.mp3','batallachuty8.mp3','batallachuty9.mp3',
                   'batallachuty10.mp3']
      
-     #aleatorio=random.randint(0,len(audioschuty)-1)
+     bases=['pista.mp3','pista1.mp3','pista2.mp3','pista3.mp3','pista4.mp3','pista5.mp3','pista6.mp3','pista7.mp3','porrobeat.mp3',
+            'trap.mp3','trap1.mp3','trap2.mp3','parasiempre.mp3','nuncaolvido.mp3','krz.mp3','galleando.mp3','drill.mp3','dobletempo.mp3']
+     
+     aleatorio=random.randint(0,len(bases)-1)
         
-     return render_template('chuty.html',audio1=audioschuty[ran(audioschuty)],audio2=audioschuty[ran(audioschuty)],audio3=audioschuty[ran(audioschuty)],audio4=audioschuty[ran(audioschuty)],audio5=audioschuty[ran(audioschuty)],audio6=audioschuty[ran(audioschuty)])
+     return render_template('chuty.html',audio1=audioschuty[ran(audioschuty)],audio2=audioschuty[ran(audioschuty)],audio3=audioschuty[ran(audioschuty)],audio4=audioschuty[ran(audioschuty)],pista=bases[aleatorio])
     
 @app.route('/batalla/mecha')
 def mecha():
     
      audiosmecha=['mecha1.mp3','mecha2.mp3','mecha3.mp3','mecha4.mp3',
                   'mecha5.mp3','mecha6.mp3','mecha7.mp3','mecha8.mp3',
+                  'mecha9.mp3','mecha10.mp3','mecha11.mp3','mecha12.mp3',
+                  'mecha13.mp3','mecha14.mp3','mecha15.mp3','mecha16.mp3',
+                  'mecha17.mp3','mecha18.mp3','mecha19.mp3'
                   ]
-     #aleatorio=random.randint(0,len(audiosmecha)-1)
+     
+     bases=['pista.mp3','pista1.mp3','pista2.mp3','pista3.mp3','pista4.mp3','pista5.mp3','pista6.mp3','pista7.mp3','porrobeat.mp3',
+            'trap.mp3','trap1.mp3','trap2.mp3','parasiempre.mp3','nuncaolvido.mp3','krz.mp3','galleando.mp3','drill.mp3','dobletempo.mp3']
+     
+     aleatorio=random.randint(0,len(bases)-1)
+     
         
-     return render_template('mecha.html',audio1=audiosmecha[ran(audiosmecha)],audio2=audiosmecha[ran(audiosmecha)],audio3=audiosmecha[ran(audiosmecha)],audio4=audiosmecha[ran(audiosmecha)],audio5=audiosmecha[ran(audiosmecha)],audio6=audiosmecha[ran(audiosmecha)])
+     return render_template('mecha.html',audio1=audiosmecha[ran(audiosmecha)],audio2=audiosmecha[ran(audiosmecha)],audio3=audiosmecha[ran(audiosmecha)],audio4=audiosmecha[ran(audiosmecha)],pista=bases[aleatorio])
     
 @app.route('/batalla/sweet')
 def sweet():
@@ -207,9 +251,15 @@ def sweet():
                   'sweet9.mp3','sweet10.mp3','sweet11.mp3','sweet12.mp3',
                   'sweet13.mp3','sweet14.mp3','sweet15.mp3','sweet16.mp3',
                   'sweet17.mp3']
+     
+     bases=['pista.mp3','pista1.mp3','pista2.mp3','pista3.mp3','pista4.mp3','pista5.mp3','pista6.mp3','pista7.mp3','porrobeat.mp3',
+            'trap.mp3','trap1.mp3','trap2.mp3','parasiempre.mp3','nuncaolvido.mp3','krz.mp3','galleando.mp3','drill.mp3','dobletempo.mp3']
+     
+     aleatorio=random.randint(0,len(bases)-1)
         
-     return render_template('sweet.html',audio1=audiossweet[ran(audiossweet)],audio2=audiossweet[ran(audiossweet)],audio3=audiossweet[ran(audiossweet)],audio4=audiossweet[ran(audiossweet)],audio5=audiossweet[ran(audiossweet)],audio6=audiossweet[ran(audiossweet)])
-
+     return render_template('sweet.html',audio1=audiossweet[ran(audiossweet)],audio2=audiossweet[ran(audiossweet)],audio3=audiossweet[ran(audiossweet)],audio4=audiossweet[ran(audiossweet)],pista=bases[aleatorio])
+     
+     
 @app.route('/incremental')
 def incremental():
     

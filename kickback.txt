@@ -9,7 +9,7 @@
 ¿Redbull o FMS?
 ¿Cual es tu freestyler favorito?
 ¿Que hiciste hoy?
-¿Que es la métrica?
+¿sabes hacer metricas?
 ¿Crees que puedas ganarle a chuty?
 ¿A que te dedicas?
 ¿De donde eres?
@@ -80,6 +80,10 @@
 ¿Pelearias con leones?
 ¿Como es tu forma de rapear?
 ¿Cual es tu mejor recuerdo?
+¿Sabes hacer doble tempo?
+¿Desde cuando conoces el freestyle?
+¿ Cual es tu color favorito?
+
 
 
 

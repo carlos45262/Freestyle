@@ -14,7 +14,10 @@
     
       gtag('config', 'G-Y7F5KYY5F5');
     </script>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
 </head>
+
 
 <style>
     #temporizador {
@@ -32,7 +35,7 @@
         <audio id="audio2" src="{{ url_for('serve_audio', filename=audio2) }}"></audio>
         <audio id="audio3" src="{{ url_for('serve_audio', filename=audio3) }}"></audio>
         <audio id="audio4" src="{{ url_for('serve_audio', filename=audio4) }}"></audio>
-        <audio id="audio5" src="{{ url_for('serve_audio', filename=audio5) }}"></audio>
+        
         
       
         <div class="central">
@@ -41,10 +44,7 @@
         </div>
         
         
-        
-        
-        
-        <audio id="audioPlayer" src="{{ url_for('serve_audio', filename='pista.mp3') }}"></audio>
+        <audio id="audioPlayer" src="{{ url_for('serve_audio', filename=pista) }}"></audio>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="{{ url_for('static', filename='script.js') }}?v={{ random }}"></script>

@@ -1,0 +1,65 @@
+ <title>Entrenar Freestyle Rap: Como mejorar en el freestyle Rap y ganar batallas de rap</title>
+    <meta name="description" content="Aprende cómo entrenar freestyle Rap de manera efectiva y mejora tus habilidades en el mundo del freestyle . Descubre técnicas, consejos y ejercicios de improvisacion para ganar batallas de rap.Aprende a rapear y conviertete en el mejor rapero">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5718487156861573"
+     crossorigin="anonymous"></script>
+     <meta name="google-site-verification" content="3DEUojWB2m5Zbimg-tTVXsbp0sSjnrHAKu_kcMfhVG0" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7F5KYY5F5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Y7F5KYY5F5');
+    </script>
+</head>
+<body>
+
+  <div class="container">
+  <div class="fondo">
+    <div class="containertitulo">
+    <h1> Entrena tu Freestyle</h1>
+    <h1>Elige un modo</h1>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  
+  <!-- Otras etiquetas y contenido de tu página -->
+
+    <div class="menucontainer">
+     <div class="primerafila">
+        <a href="/historias"<button class="myButton" id="miboton">Historias</button></a>
+        <a href="/objetos"<button class="myButton"id="miboton">Objetos</button></a>
+     </div>
+     <div class="segundafila">
+        <a href="/terminaciones"<button class="myButton" id="miboton">Terminaciones</button></a>
+        <a href="/batalla"<button class="myButton" id="myButton">Batalla</button></a>
+    </div>
+    <div class="tercerafila">
+        <a href="/incremental"<button class="myButton" id="miboton">Incremental Mode</button></a>
+        <a href="/kickback"<button class="myButton" id="miboton">Kickback</button></a>
+    </div>
+   
+    </div>
+    </div>
+  <div class="footer">
+    <a href="politicas">Políticas de privacidad</a>
+    <a href="cookies">Políticas de cookies</a>
+    <a href="contacto">Contacto</a>
+    <a href="about">Sobre mi</a>
+    <p>comomejorarenfreestylerap@gmail.com</p> 
+
+
+  </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

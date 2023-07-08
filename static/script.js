@@ -23,8 +23,9 @@ function startTimer() {
 
         // Si el tiempo llega a cero, mostrar un mensaje o realizar una acción
         if (segundos < 0) {
-            temporizador.innerHTML = "Tiempo finalizado";
+            
             var boton = document.getElementById("reinicio");
+            
             boton.style.display = "block";
             // Aquí puedes realizar una acción adicional cuando el tiempo se agote
         } else {
@@ -43,8 +44,8 @@ function playMusic() {
     document.getElementById("audio2"),
     document.getElementById("audio3"),
     document.getElementById("audio4"),
-    document.getElementById("audio5"),
-    document.getElementById("audio6")
+    
+   
     // Agrega más elementos de audio para las demás músicas
   ];
   var currentIndex = 0;
@@ -77,6 +78,8 @@ function playMusic() {
 
 function playAudio() {
   var audioPlayer = document.getElementById('audioPlayer');
+  
+  audioPlayer.volume = 0.5;
   audioPlayer.play();
 }
 

@@ -15,10 +15,58 @@
     
       gtag('config', 'G-Y7F5KYY5F5');
     </script>
+     <style>
+        /* Estilos específicos para la versión móvil */
+        @media (max-width: 768px) {
+            .containertitulo {
+                text-align: center;
+                
+                .container{
+                  
+                  background-image: url('/static/fondo.jpg');
+                  min-height: 200vh;
+                  min-width: 60vh;
+
+            }
+            
+            }
+            
+            .container{
+                  
+                  background-image: url('/static/fondo.jpg');
+                  min-height: 200vh;
+                  min-width: 60vh;
+
+            }
+            
+             body {
+                background-size: 100% auto;
+              }
+            .menucontainer a {
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+            }
+            
+            a{
+                text-decoration: none;      
+
+            }
+            
+        }
+        </style>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    
+
 </head>
 
 
 <body>
+    <div class="container">
     <div class="containertitulo">
 
         <h1>Elige un MC para batallar</h1>
@@ -42,10 +90,12 @@
         <div class= botonup>
             <a href="batalla/sweet"<button id="miboton" class="colorboton">SWEETPAIN</button></a>
         </div>
-    </div>
+    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </div>
+    </div>
   <div class="footer">
     <a href="politicas">Políticas de privacidad</a>
     <a href="cookies">Políticas de cookies</a>

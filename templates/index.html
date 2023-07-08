@@ -18,49 +18,93 @@
     
       gtag('config', 'G-Y7F5KYY5F5');
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Estilos específicos para la versión móvil */
+        @media (max-width: 768px) {
+            .containertitulo {
+                text-align: center;
+            }
+            
+            .container{
+                  
+                  background-image: url('/static/fondo.jpg');
+                  min-height: 200vh;
+                  min-width: 60vh;
+
+            }
+            
+             body {
+                background-size: 100% auto;
+              }
+            .menucontainer a {
+                margin-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+            }
+            
+            a{
+                text-decoration: none;      
+
+            }
+            
+            .footer{
+               
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
 </head>
 <body>
-  <div class="fondo">
-    <div class="containertitulo">
-    <h1> Entrena tu Freestyle</h1>
-    <h1>Elige un modo</h1>
+
+<div class="container">
+    
+        <div class="row containertitulo">
+            <h1>Entrena tu Freestyle</h1>
+            <h1>Elige un modo</h1>
+        </div>
+
+        <div class="row menucontainer">
+            <div class="col-sm-6">
+                <a href="/historias"><button class="myButton">Historias</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/objetos"><button class="myButton">Objetos</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/terminaciones"><button class="myButton">Terminaciones</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/batalla"><button class="myButton">Batalla</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/incremental"><button class="myButton">Incremental Mode</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="/kickback"><button class="myButton">Kickback</button></a>
+            </div>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-  
-  <!-- Otras etiquetas y contenido de tu página -->
-
-    <div class="menucontainer">
-     <div class="primerafila">
-        <a href="/historias"<button class="myButton" id="miboton">Historias</button></a>
-        <a href="/objetos"<button class="myButton"id="miboton">Objetos</button></a>
-     </div>
-     <div class="segundafila">
-        <a href="/terminaciones"<button class="myButton" id="miboton">Terminaciones</button></a>
-        <a href="/batalla"<button class="myButton" id="myButton">Batalla</button></a>
+     <div class="footer">
+        <a href="politicas">Políticas de privacidad</a>
+        <a href="cookies">Políticas de cookies</a>
+        <a href="contacto">Contacto</a>
+        <a href="about">Sobre mí</a>
+        <p>comomejorarenfreestylerap@gmail.com</p>
     </div>
-    <div class="tercerafila">
-        <a href="/incremental"<button class="myButton" id="miboton">Incremental Mode</button></a>
-        <a href="/kickback"<button class="myButton" id="miboton">Kickback</button></a>
-    </div>
-   
-    </div>
-    </div>
-  <div class="footer">
-    <a href="politicas">Políticas de privacidad</a>
-    <a href="cookies">Políticas de cookies</a>
-    <a href="contacto">Contacto</a>
-    <a href="about">Sobre mi</a>
-    <p>comomejorarenfreestylerap@gmail.com</p> 
-
-
-  </div>
-   
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41e
 
+    
 </body>
-</html>
+   
+
+

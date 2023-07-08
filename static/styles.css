@@ -1,10 +1,19 @@
 
 body{
   /*background-image: url('{{ url_for('static', filename=/static/img2017/chuty.jpg) }}');*/
+ 
+                  
   background-image: url('/static/fondo.jpg');
+  min-height: 200vh;
+  min-width: 60vh;
+
+            
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
+
+
 
 .chuty{
   /*background-image: url('{{ url_for('static', filename=/static/img2017/chuty.jpg) }}');*/
@@ -77,8 +86,10 @@ a{
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 4%;
+  margin-top: 3%;
 }
+
+
 
 
 .menucontainer {
