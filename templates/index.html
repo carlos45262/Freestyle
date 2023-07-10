@@ -3,6 +3,7 @@
 <head>
     <title>Entrenar Freestyle Rap: Como mejorar en el freestyle Rap y ganar batallas de rap</title>
     <meta name="description" content="Aprende cómo entrenar freestyle Rap de manera efectiva y mejora tus habilidades en el mundo del freestyle . Descubre técnicas, consejos y ejercicios de improvisacion para ganar batallas de rap.Aprende a rapear y conviertete en el mejor rapero">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
@@ -24,13 +25,22 @@
         @media (max-width: 768px) {
             .containertitulo {
                 text-align: center;
+                
+                
             }
             
             .container{
                   
                   background-image: url('/static/fondo.jpg');
+                  background-size: cover;
                   min-height: 200vh;
-                  min-width: 60vh;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 100%;
+                  height: 0;
+                  padding-bottom: 75%; /* Proporció
+                  max-width: 100%;
+                  font-size: 100px;
 
             }
             
@@ -44,7 +54,14 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                font-size: 100px;
                 
+            }
+            
+            .row menucontainer{
+                  display: flex;
+                  justify-content: center;
+            
             }
             
             a{

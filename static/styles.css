@@ -268,7 +268,12 @@ a{
 
 
 
-
+@media (max-width: 768px) {
+          
+              body {
+                font-size: 30px; /* Tamaño de fuente más grande */
+              }
+              
 
 }
 
@@ -307,6 +312,10 @@ a{
     color: white;
     margin-top:10%;
 }
+
+
+
+
         
    
         
